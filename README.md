@@ -1,4 +1,4 @@
-# Teste - Flatfile 
+# Flatfile 
 
 Este projeto permite a leitura de arquivos ".dat" localizados na pasta "data" - na raiz do projeto - e a partir disso, montar dados de venda baseados em 3 segmentos (customer, salesman e sales) identificados por um código. 
 
