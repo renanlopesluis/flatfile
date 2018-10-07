@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: flatfile
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Renan
+Implementation-Vendor-Id: com.ilegra
+Build-Jdk: 1.8.0_74
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/flatfile
+Created-By: Maven Integration for Eclipse
+
