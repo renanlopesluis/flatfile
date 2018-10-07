@@ -15,7 +15,11 @@ Flatfile fora desenvolvido utilizando a linguagem Java. Algumas funcionalidades 
 
 **Notas importantes**
 - Qualidade: 94,7% de cobertura de testes;
+- Dada a natureza principal (vendas) do projeto, algumas tipagens de dados foram escolhidas especificamente em algumas modelo:
+  - O tipo Long para id em SalesDataRow (já que uma nova venda é algo que frequentemente ocorrerá, ids exorbitantes não seriam raros);
+  - O tipo BigDecimal para valores monetários como salary em SalesmanDataRow e price em Item (já que estamos lidando com dinheiro e a precisão é extremamente importante).
 <br/>
 
 **Possíveis Melhorias**
-- Durante o desenvolvimento foi constatado uma situação em que a leitura dos arquivos .DAT iria resultar em um problema, gerando assim uma inconformidade no decorrer do processamento. Devido ao fato de os dados serem separados pelo caracter "ç" e, este foi o caracter especificado para ser desenvolvido no projeto, os casos em que houvessem nomes como "Mendonça" ou "Gonçalves" podem quebrar os caracteres de forma equivocada e comprometendo, assim, o relatório de vendas. Uma possível melhoria poderia ser a troca do caracter "ç" por ";" nos arquivos a serem lidos e na própria aplicação, garantindo assim uma leitura sem inconsistências.
+- Durante o desenvolvimento foi constatado uma situação em que a leitura dos arquivos .DAT iria resultar em um problema, gerando assim uma inconformidade no decorrer do processamento. Devido ao fato de os dados serem separados pelo caracter "ç" e, este foi o caracter especificado para ser desenvolvido no projeto, os casos em que houvessem nomes como "Mendonça" ou "Gonçalves" podem quebrar os caracteres de forma equivocada e comprometendo, assim, o relatório de vendas. Uma possível melhoria poderia ser a troca do caracter "ç" por ";" nos arquivos a serem lidos e na própria aplicação, garantindo assim uma leitura sem inconsistências;
+- Acrescentar BDD para fortalecer melhor as regras e os testes, garantindo assim mais qualidade ao projeto.
